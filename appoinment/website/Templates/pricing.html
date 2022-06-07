@@ -1,0 +1,356 @@
+{%  load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Appoinment System</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{%  static 'website/img/core-img/LG.png' %}">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{%  static 'website/css/style.css' %}">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preload-content">
+      <div id="dento-load"></div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Top Header Area -->
+    <div class="top-header-area">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <!-- Top Content -->
+          <div class="col-6 col-md-9 col-lg-8">
+            <div class="top-header-content">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="1st Floor, Cosmos Enclave, Thane West, 400615"><i class="fa fa-map-marker"></i> <span>1st Floor, Cosmos Enclave, Thane West, 400615</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="dr.appointment.system@gmail.com"><i class="fa fa-envelope"></i> <span>
+                dr.appointment.system@gmail.com</span></a>
+            </div>
+          </div>
+          <!-- Top Header Social Info -->
+          <div class="col-6 col-md-3 col-lg-4">
+            <div class="top-header-social-info text-right">
+              <a href="http://facebook.com/" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="http://twitter.com/" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="http://gmail.com/" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+              <a href="http://linkedin.com/" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <div class="container">
+          <!-- Classy Menu -->
+          <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+            <!-- Logo -->
+            <a class="nav-brand" href="{% url 'pricing' %}"><img src="{% static 'website/img/core-img/lo3.png' %}" alt=""></a>
+
+            <!-- Navbar Toggler -->
+            <div class="classy-navbar-toggler">
+              <span class="navbarToggler"><span></span><span></span><span></span></span>
+            </div>
+
+            <!-- Menu -->
+            <div class="classy-menu">
+
+              <!-- Close Button -->
+              <div class="classycloseIcon">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+
+              <!-- Nav Start -->
+              <div class="classynav">
+                <ul id="nav">
+                  <li><a href="{% url 'Home' %}">Home</a></li>
+                  <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                      <li><a href="{% url 'Home' %}">- Home</a></li>
+                      <li><a href="{% url 'about' %}">- About Us</a></li>
+                      <li><a href="{% url 'service' %}">- Service</a></li>
+                      <li><a href="{% url 'pricing' %}">- Pricing</a></li>
+                      <li><a href="{% url 'blog' %}">- Blog</a></li>
+                      <li><a href="{% url 'blogdetails' %}">- Blog Details</a></li>
+                      <li><a href="{% url 'contact' %}">- Contact</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'service' %}">Service</a></li>
+                  <li><a href="{% url 'pricing' %}">Pricing</a></li>
+                  <li><a href="#">Blog</a>
+                    <ul class="dropdown">
+                      <li><a href="{% url 'blog' %}">- Blog</a></li>
+                      <li><a href="{% url 'blogdetails' %}">- Blog Details</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+              </div>
+              <!-- Nav End -->
+            </div>
+
+            <!-- Booking Now Button -->
+            <a href="{% url 'Home' %}" class="btn dento-btn booking-btn" id="booking">Book Now</a>
+            {% comment %} <a href="#" class="btn dento-btn booking-btn">Book Now</a> {% endcomment %}
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/aa2.png' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Our Pricing</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'Home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Our Pricing</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ***** Dento Pricing Table Area Start ***** -->
+  <section class="dento-pricing-table-area mt-50 section-padding-0-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="dento-price-table table-responsive">
+            <table class="table table-borderless mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Service Names</th>
+                  <th scope="col">Stage</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">COVID Consultation</th>
+                  <td>1st Times</td>
+                  <td>₹ 1000</td>
+                </tr>
+                <tr>
+                  <th scope="row"> COVID Consultation</th>
+                  <td>2nd Times onwards </td>
+                  <td>₹ 600 </td>
+                </tr>
+                <tr>
+                  <th scope="row"> Gynecology</th>
+                  <td>1st Time </td>
+                  <td>₹ 2000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Gynecology</th>
+                  <td>2nd Times onwards</td>
+                  <td>₹ 1000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Pediantics</th>
+                  <td>1st Time</td>
+                  <td> ₹ 1500</td>
+                </tr>
+                <tr>
+                  <th scope="row"> Pediantics</th>
+                  <td> 2nd Times onwards</td>
+                  <td>₹ 500 </td>
+                </tr>
+                <tr>
+                  <th scope="row">Dermatology</th>
+                  <td>1st Time</td>
+                  <td>₹ 1500</td>
+                </tr>
+                <tr>
+                  <th scope="row">Dermatology</th>
+                  <td>2nd Times onwards</td>
+                  <td>₹ 1000</td>
+                </tr>
+                <tr>
+                  <th scope="row">Consultant Physician</th>
+                  <td>1st Time</td>
+                  <td>₹ 500</td>
+                </tr>
+                <tr>
+                  <th scope="row">Consultant Physician</th>
+                  <td>2nd Times onwards</td>
+                  <td>₹ 300</td>
+                </tr>
+                <tr>
+                  <th scope="row">ENT Expert</th>
+                  <td>1st Time</td>
+                  <td>₹ 3000</td>
+                </tr>
+                <tr>
+                  <th scope="row">ENT Expert</th>
+                  <td>2nd Times onwards</td>
+                  <td>₹ 2000</td>
+                </tr>
+                <tr>
+                  {% comment %} <th scope="row"></th>
+                  <td></td>
+                  <td></td>
+                </tr>
+               
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                  <td></td>
+                </tr> {% endcomment %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="more-btn text-center mt-50">
+            <a href="#" class="btn dento-btn">Read More <i class="fa fa-angle-double-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Dento Pricing Table Area End ***** -->
+
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image:url('{% static 'website/img/bg-img/3.jpg' %}');">
+    <div class="container">
+      <div class="row">
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-footer-widget">
+            <a href="{% url 'pricing' %}" class="d-block mb-4"><img src="{% static 'website/img/core-img/lo3.png' %}" alt=""></a>
+            <p>A doctor sees pain, death, suffering on a daily basis but they provide only care and cure. So if you have any Health issue or you've to consulant any doctor, So you can easily book an appointment as per your schedule and can have a few word with doctor..</p>
+            <div class="footer-contact">
+              <p><i class="icon_pin"></i> 1st Floor, Cosmos Enclave, Thane West, 400615</p>
+              <p><i class="icon_phone"></i> +919920483771</p>
+              <p><i class="icon_mail"></i> dr.appointment.system@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Opening Hours</h5>
+
+            <!-- Opening Hours -->
+            <ul class="opening-hours">
+              <li><span>Mon-Wed</span> <span>8.00-18.00</span></li>
+              <li><span>Thu-Fri</span> <span>8.00-17.00</span></li>
+              <li><span>Sat</span> <span>9.00-17.00</span></li>
+              <li><span>Sun</span> <span>10.00-17.00</span></li>
+              <li><span>Holiday</span> <span>Closed</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Quick Link</h5>
+
+            <!-- Quick Links Nav -->
+            <nav>
+              <ul class="quick-links">
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="{% url 'contact'%}">Contact</a></li>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Advisors</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Dentist</a></li>
+                <li><a href="{% url 'service' %}">Services</a></li>
+                <li><a href="#">Legals</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget">
+            <!-- Widget Title -->
+            <h5 class="widget-title">Newsletter</h5>
+
+            <p>We will send out weekly newest article and some great offers</p>
+            <!-- Newsletter Form -->
+            <div class="footer-newsletter-form">
+              <form action="#" method="post">
+                <input type="email" name="nl-email" value="" placeholder="Email Address">
+                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+              </form>
+            </div>
+
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="http://facebook.com/" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="http://twitter.com/" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="http://gmail.com/" data-toggle="tooltip" data-placement="top" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+              <a href="http://linkedin.com/" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copywrite Area -->
+    
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js {% static 'website/' %}-->
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
+  <!-- Popper js ***{% static 'website/' %}***-->
+  <script src="{% static 'website/js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'website/js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'website/js/default-assets/active.js' %}"></script>
+
+
+
+</body>
+
+</html>
